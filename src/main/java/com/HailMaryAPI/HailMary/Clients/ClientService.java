@@ -27,7 +27,6 @@ public class ClientService {
         return clientRepository.getOne(id);
     }
 
-
     public void addNewClient(Client client) {
         Optional<Client> clientOptional = clientRepository.findClientByEmail(client.getEmail());
         if(clientOptional.isPresent()) {

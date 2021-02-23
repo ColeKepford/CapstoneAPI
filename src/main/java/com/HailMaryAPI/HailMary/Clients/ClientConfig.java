@@ -9,7 +9,7 @@ import java.util.List;
 
 @Configuration
 public class ClientConfig {
-// This adds two clients to the database
+
 //    @Bean
 //    CommandLineRunner commandLineRunner(ClientRepository repository) {
 //        return args -> {

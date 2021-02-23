@@ -2,6 +2,7 @@ package com.HailMaryAPI.HailMary.Clients;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Optional;
 
 @Entity
 @Table(name="ngf_clients")

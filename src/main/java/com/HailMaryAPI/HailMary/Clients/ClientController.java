@@ -3,10 +3,13 @@ package com.HailMaryAPI.HailMary.Clients;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
-@RequestMapping(path = "/clients")
+@RequestMapping
+@CrossOrigin(origins="http://localhost:3000")
 public class ClientController {
     private final ClientService clientService;
 
@@ -29,4 +32,12 @@ public class ClientController {
     public void addNewClient(@RequestBody Client client) {
         clientService.addNewClient(client);
     }
+
+    @GetMapping("/login/{username}&{password}")
+    public Client logon(@PathVariable("username") String username,
+                      @PathVariable("password") String password) {
+        Client cl = clientService.credentials(username, password);
+        return cl;
+    }
+
 }

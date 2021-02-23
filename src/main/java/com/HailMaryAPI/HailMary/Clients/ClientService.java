@@ -34,4 +34,15 @@ public class ClientService {
         }
         clientRepository.save(client);
     }
+
+    public Client credentials(String username, String password){
+        Optional<Client> clientOptional = clientRepository.findClient(username,password);
+        if(clientOptional.isPresent()){
+            Client client = clientOptional.get();
+            return  client;
+        }
+        else {
+            throw new IllegalStateException("Client doesnt exist");
+        }
+    }
 }

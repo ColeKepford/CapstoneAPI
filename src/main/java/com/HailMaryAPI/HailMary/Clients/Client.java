@@ -1,6 +1,9 @@
 package com.HailMaryAPI.HailMary.Clients;
 
 import javax.persistence.*;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.time.LocalDate;
 
 @Entity
@@ -12,6 +15,7 @@ public class Client {
     private Integer client_id;
     private String country;
     @Column(name="date_of_birth")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dob;
 
     private String email;

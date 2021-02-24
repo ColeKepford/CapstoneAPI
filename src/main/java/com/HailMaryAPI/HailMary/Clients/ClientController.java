@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping(value = "/clients")
 @CrossOrigin(origins="http://localhost:3000")
 public class ClientController {
     private final ClientService clientService;
@@ -22,17 +22,17 @@ public class ClientController {
         return clientService.getAllClients();
     }
 
-    @GetMapping("/clients/{id}")
+    @GetMapping(value = "/{id}")
     public Client getClient(@PathVariable("id")Integer id) {
         return clientService.getClientById(id);
     }
 
-    @PostMapping
+    @PostMapping(value = "/addClient")
     public void addNewClient(@RequestBody Client client) {
         clientService.addNewClient(client);
     }
 
-    @GetMapping("/login/{username}&{password}")
+    @GetMapping(value = "/login/{username}&{password}")
     public Client logon(@PathVariable("username") String username,
                       @PathVariable("password") String password) {
         Client cl = clientService.credentials(username, password);

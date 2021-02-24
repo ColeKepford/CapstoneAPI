@@ -35,11 +35,10 @@ public class ClientService {
         clientRepository.save(client);
     }
 
-    public Client credentials(String username, String password){
-        Optional<Client> clientOptional = clientRepository.findClient(username,password);
+    public Client credentials(String email, String password){
+        Optional<Client> clientOptional = clientRepository.findClient(email,password);
         if(clientOptional.isPresent()){
-            Client client = clientOptional.get();
-            return  client;
+            return clientOptional.get();
         }
         else {
             throw new IllegalStateException("Client doesnt exist");

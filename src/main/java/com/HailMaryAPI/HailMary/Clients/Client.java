@@ -6,7 +6,8 @@ import java.util.Optional;
 
 @Entity
 @Table(name="ngf_clients")
-class Client {
+
+public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer client_id;

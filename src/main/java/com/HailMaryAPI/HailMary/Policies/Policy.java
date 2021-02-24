@@ -6,6 +6,8 @@ import javax.persistence.*;
 
 import com.HailMaryAPI.HailMary.Clients.Client;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 @Table(name = "ngf_policies")
 public class Policy {
@@ -24,7 +26,9 @@ public class Policy {
     private String provider;
     private String type;
     private double coverage_amount;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate start_date;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate end_date;
 
     public Policy () {

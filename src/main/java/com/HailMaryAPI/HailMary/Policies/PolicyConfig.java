@@ -18,11 +18,11 @@ public class PolicyConfig {
     @Bean
     CommandLineRunner commandLineRunner(PolicyRepository repository, ClientRepository clientRepository) {
         return args -> {
-            Optional<Client> optionalCole = clientRepository.findById(1);
-            Client cole = null;
-            if(!optionalCole.isEmpty()) {
-                cole = optionalCole.get();
-            }
+            
+        Client cole = new Client("cole.kepford@gmail.com", "cole", "kepford", LocalDate.of(1997, 02, 16), 5872159106L, "123 street", "AB", "CA", 
+        "t2w0p9", "password");
+            ClientService cs = new ClientService(clientRepository);
+            cs.addNewClient(cole);
 
             Policy one = new Policy(cole, "Manu15", "Cole", "Kepford",
             "Manulife", "Universal", 500000.0, LocalDate.of(2011, 05, 16), LocalDate.of(2099, 05, 16));

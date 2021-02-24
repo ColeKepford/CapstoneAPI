@@ -13,7 +13,7 @@ public class Policy {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int policy_id;
     
-    @JoinColumn(name = "client_id", referencedColumnName = "client_id")
+    @JoinColumn(name = "client", referencedColumnName = "client_id")
     @ManyToOne(optional = false, fetch = FetchType.EAGER)
     private Client client;
     @Column(name="policy_number")

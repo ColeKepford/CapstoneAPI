@@ -3,7 +3,6 @@ package com.HailMaryAPI.HailMary.Policies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
 import java.util.List;
 import java.util.Optional;
 
@@ -56,5 +55,21 @@ public class PolicyService {
             throw new IllegalStateException("Policy with that ID already exists");
         }
         policyRepository.save(policy);
+    }
+
+    public void deletePolicy(Policy policy) {
+        Optional<Policy> policyOptional = policyRepository.findById(policy.getPolicy_id());
+        if(!policyOptional.isPresent()) {
+            throw new IllegalStateException("That policy doesn't exist");
+        }
+        policyRepository.delete(policy);
+    }
+
+    public void deletePolicyById(int id) {
+        Optional<Policy> policyOptional = policyRepository.findById(id);
+        if(policyOptional.isPresent()) {
+            throw new IllegalStateException("Policy with that ID doesn't exist");
+        }
+        policyRepository.deleteById(id);
     }
 }

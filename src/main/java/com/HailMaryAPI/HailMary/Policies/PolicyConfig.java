@@ -19,10 +19,10 @@ public class PolicyConfig {
     CommandLineRunner commandLineRunner(PolicyRepository repository, ClientRepository clientRepository) {
         return args -> {
             
-        Client cole = new Client("cole.kepford@gmail.com", "cole", "kepford", LocalDate.of(1997, 02, 16), 5872159106L, "123 street", "AB", "CA", 
-        "t2w0p9", "password");
+        
             ClientService cs = new ClientService(clientRepository);
-            cs.addNewClient(cole);
+            Client cole = cs.getClientById(1);
+            
 
             Policy one = new Policy(cole, "Manu15", "Cole", "Kepford",
             "Manulife", "Universal", 500000.0, LocalDate.of(2011, 05, 16), LocalDate.of(2099, 05, 16));

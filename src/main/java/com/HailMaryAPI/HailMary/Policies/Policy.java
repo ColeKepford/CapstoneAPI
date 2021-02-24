@@ -9,6 +9,7 @@ import com.HailMaryAPI.HailMary.Clients.Client;
 @Entity
 @Table(name = "ngf_policies")
 public class Policy {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int policy_id;

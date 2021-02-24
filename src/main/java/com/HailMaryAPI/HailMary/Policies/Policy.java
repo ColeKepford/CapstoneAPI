@@ -77,8 +77,8 @@ public class Policy {
         return this.policyNumber;
     }
 
-    public void setPolicyNumber(String policyNum) {
-        this.policyNum = policyNum;
+    public void setPolicyNumber(String policyNumber) {
+        this.policyNumber = policyNumber;
     }
 
     public String getFirst_name() {
@@ -142,7 +142,7 @@ public class Policy {
         return "{" +
             " policy_id='" + getPolicy_id() + "'" +
             ", client='" + getClient() + "'" +
-            ", policyNum='" + getPolicyNum() + "'" +
+            ", policyNum='" + getPolicyNumber() + "'" +
             ", first_name='" + getFirst_name() + "'" +
             ", last_name='" + getLast_name() + "'" +
             ", provider='" + getProvider() + "'" +

@@ -2,7 +2,6 @@ package com.HailMaryAPI.HailMary.Clients;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Optional;
 
 @Entity
 @Table(name="ngf_clients")
@@ -25,14 +24,13 @@ public class Client {
     private String prov;
 
     private String street_address;
-    private String username;
 
     public Client() {
     }
 
     public Client(String email, String first_name, String last_name, LocalDate dob, Long phone_number,
                   String street_address, String prov, String country, String postal_code,
-                  String username, String password) {
+                  String password) {
         this.email = email;
         this.first_name = first_name;
         this.last_name = last_name;
@@ -42,13 +40,12 @@ public class Client {
         this.prov = prov;
         this.country = country;
         this.postal_code = postal_code;
-        this.username = username;
         this.password = password;
     }
 
     public Client(Integer client_id, String email, String first_name, String last_name, LocalDate dob,
                   Long phone_number, String street_address, String prov, String country, String postal_code,
-                  String username, String password) {
+                  String password) {
         this.client_id = client_id;
         this.email = email;
         this.first_name = first_name;
@@ -59,7 +56,6 @@ public class Client {
         this.prov = prov;
         this.country = country;
         this.postal_code = postal_code;
-        this.username = username;
         this.password = password;
     }
 
@@ -135,14 +131,6 @@ public class Client {
         this.postal_code = postal_code;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -168,7 +156,6 @@ public class Client {
                 ", prov='" + prov + '\'' +
                 ", country='" + country + '\'' +
                 ", postal_code='" + postal_code + '\'' +
-                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }

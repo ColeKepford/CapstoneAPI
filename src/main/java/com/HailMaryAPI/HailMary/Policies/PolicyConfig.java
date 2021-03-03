@@ -20,17 +20,17 @@ public class PolicyConfig {
         return args -> {
             
         
-            ClientService cs = new ClientService(clientRepository);
-            Client cole = cs.getClientById(1);
+            // ClientService cs = new ClientService(clientRepository);
+            // Client cole = cs.getClientById(1);
             
 
-            Policy one = new Policy(cole, "Manu15", "Cole", "Kepford",
-            "Manulife", "Universal", 500000.0, LocalDate.of(2011, 05, 16), LocalDate.of(2099, 05, 16));
+            // Policy one = new Policy(cole, "Manu15", "Cole", "Kepford",
+            // "Manulife", "Universal", 500000.0, LocalDate.of(2011, 05, 16), LocalDate.of(2099, 05, 16));
 
-            Policy two = new Policy(cole, "Manu16", "Cole", "Kepford",
-            "Manulife", "Term 10", 500000.0, LocalDate.of(2011, 02, 25), LocalDate.of(2021, 02, 25));
+            // Policy two = new Policy(cole, "Manu16", "Cole", "Kepford",
+            // "Manulife", "Term 10", 500000.0, LocalDate.of(2011, 02, 25), LocalDate.of(2021, 02, 25));
 
-            repository.saveAll(List.of(one, two));
+            // repository.saveAll(List.of(one, two));
         };
     }
     

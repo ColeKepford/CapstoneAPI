@@ -2,9 +2,7 @@ package com.HailMaryAPI.HailMary.Clients;
 
 import javax.persistence.*;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
-import java.time.LocalDate;
+//import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Table(name="ngf_clients")
@@ -15,8 +13,8 @@ public class Client {
     private Integer client_id;
     private String country;
     @Column(name="date_of_birth")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private LocalDate dob;
+    //@DateTimeFormat(pattern = "yyyy-MM-dd")
+    private String dob;
 
     private String email;
     private String first_name;
@@ -32,7 +30,7 @@ public class Client {
     public Client() {
     }
 
-    public Client(String email, String first_name, String last_name, LocalDate dob, Long phone_number,
+    public Client(String email, String first_name, String last_name, String dob, Long phone_number,
                   String street_address, String prov, String country, String postal_code,
                   String password) {
         this.email = email;
@@ -47,7 +45,7 @@ public class Client {
         this.password = password;
     }
 
-    public Client(Integer client_id, String email, String first_name, String last_name, LocalDate dob,
+    public Client(Integer client_id, String email, String first_name, String last_name, String dob,
                   Long phone_number, String street_address, String prov, String country, String postal_code,
                   String password) {
         this.client_id = client_id;
@@ -87,11 +85,11 @@ public class Client {
         this.last_name = last_name;
     }
 
-    public LocalDate getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(LocalDate dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 

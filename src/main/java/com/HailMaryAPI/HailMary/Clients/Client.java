@@ -2,20 +2,15 @@ package com.HailMaryAPI.HailMary.Clients;
 
 import javax.persistence.*;
 
-//import org.springframework.format.annotation.DateTimeFormat;
-
 @Entity
 @Table(name="ngf_clients")
-
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer client_id;
     private String country;
     @Column(name="date_of_birth")
-    //@DateTimeFormat(pattern = "yyyy-MM-dd")
     private String dob;
-
     private String email;
     private String first_name;
     private String last_name;
@@ -24,7 +19,6 @@ public class Client {
     private String postal_code;
     @Column(name="province")
     private String prov;
-
     private String street_address;
 
     public Client() {

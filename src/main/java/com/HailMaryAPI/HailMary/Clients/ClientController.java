@@ -30,7 +30,6 @@ public class ClientController {
     @PostMapping(path="/RegisterClient", consumes = "application/json", produces = "application/json")
     public void addNewClient(@RequestBody Client client) {
         clientService.addNewClient(client);
-        System.out.print(client);
     }
 
     @GetMapping("/login/{username}&{password}")

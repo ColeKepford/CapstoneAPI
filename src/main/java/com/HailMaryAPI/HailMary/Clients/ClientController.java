@@ -27,7 +27,7 @@ public class ClientController {
         return clientService.getClientById(id);
     }
 
-    @PostMapping(path="/RegisterClient", consumes = "application/json", produces = "application/json")
+    @PostMapping(path="/registerClient", consumes = "application/json", produces = "application/json")
     public void addNewClient(@RequestBody Client client) {
         clientService.addNewClient(client);
     }

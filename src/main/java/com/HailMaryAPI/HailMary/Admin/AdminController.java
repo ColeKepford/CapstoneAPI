@@ -9,16 +9,26 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/admin")
 @CrossOrigin(origins="http://localhost:3000")
 public class AdminController {
-    private final AdminService clientService;
+    private final AdminService adminService;
 
     @Autowired
-    public AdminController(AdminService clientService) {
-        this.clientService = clientService;
+    public AdminController(AdminService adminService) {
+        this.adminService = adminService;
     }
-
     @GetMapping("/{id}")
     public Admin getAdmin(@PathVariable("id")Integer id) {
-        return clientService.getAdminById(id);
+        return adminService.getAdminById(id);
     }
 
+    @GetMapping("/login/{username}&{password}")
+    public Admin logon(@PathVariable("username") String username,
+                      @PathVariable("password") String password) {
+        Admin cl = adminService.credentials(username, password);
+        return cl;
+    }
+
+    @PostMapping(path="/registerAdmin", consumes = "application/json", produces = "application/json")
+    public void addNewAdmin(@RequestBody Admin admin) {
+        adminService.addNewAdmin(admin);
+    }
 }

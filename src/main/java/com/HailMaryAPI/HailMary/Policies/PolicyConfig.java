@@ -20,7 +20,7 @@ public class PolicyConfig {
         return args -> {
             
         
-             ClientService cs = new ClientService(clientRepository);
+             /*ClientService cs = new ClientService(clientRepository);
              Client cole = cs.getClientById(1);
             
 
@@ -30,7 +30,7 @@ public class PolicyConfig {
              Policy two = new Policy(cole, "Manu16", "Cole", "Kepford",
              "Manulife", "Term 10", 500000.0, LocalDate.of(2011, 02, 25), LocalDate.of(2021, 02, 25));
 
-             repository.saveAll(List.of(one, two));
+             repository.saveAll(List.of(one, two));*/
         };
     }
     

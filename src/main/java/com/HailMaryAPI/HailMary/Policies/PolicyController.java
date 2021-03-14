@@ -18,13 +18,13 @@ public class PolicyController {
         return policyService.getAllPolicies();
     }
 
-    @GetMapping(value = "/{email}")
+    @GetMapping(value = "/email:{email}")
     public List<Policy> getPoliciesByEmail(@PathVariable("email") String email) {
       return policyService.getAllPoliciesByEmail(email);
     }
 
     
-    @GetMapping(value = "/{id}") 
+    @GetMapping(value = "/id:{id}") 
     public Policy getPolicy(@PathVariable("id")Integer id) {
         return policyService.getPolicyById(id);
     }

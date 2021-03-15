@@ -3,6 +3,8 @@ package com.HailMaryAPI.HailMary.Clients;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.*;
+import com.HailMaryAPI.HailMary.Email.Email;
+import com.HailMaryAPI.HailMary.Email.SendEmailService;
 
 import java.util.List;
 
@@ -17,7 +19,7 @@ public class ClientController {
         this.clientService = clientService;
     }
 
-    @GetMapping
+    @GetMapping("/allClients")
     public List<Client> getAllClients() {
         return clientService.getAllClients();
     }
@@ -35,8 +37,12 @@ public class ClientController {
     @GetMapping("/login/{username}&{password}")
     public Client logon(@PathVariable("username") String username,
                       @PathVariable("password") String password) {
-        Client cl = clientService.credentials(username, password);
-        return cl;
+        return clientService.credentials(username, password);
     }
 
+    @PostMapping(path="/SendEmail", consumes = "application/json", produces = "application/json")
+    public void sendEmail(@RequestBody Email email) {
+        SendEmailService emailService = new SendEmailService();
+        emailService.sendEmail(email);
+    }
 }

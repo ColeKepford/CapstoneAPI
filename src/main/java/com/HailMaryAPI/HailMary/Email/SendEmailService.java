@@ -13,27 +13,13 @@ public class SendEmailService {
 
     public void sendEmail(Email email) {
 
-        String html = "<!doctype html>\n" +
-        "<head>\n" +
-        "    <meta charset=\"UTF-8\">\n" +
-        "    <meta name=\"viewport\"\n" +
-        "          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n" +
-        "    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n" +
-        "    <title>Client has contacted you</title>\n" +
-        "</head>\n" +
-        "<body>\n" +
-        "<div>Email from:<b> Email: " + email.getFrom() + " <b>Name: " + email.getName() + "</b></div>\n" +
-        "\n" +
-        "<div>" + email.getTopic() + "</div>\n" +
-        "</body>\n" +
-        "</html>\n";
-
+        String body = email.getName() + " has contacted you about: " + email.getTopic();
         System.out.println("sending email...");
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom("nexgenfinancialinsurance@gmail.com");
         message.setTo("nexgenfinancialinsurance@gmail.com");
         message.setSubject("Email from: " + email.getFrom());
-        message.setText(html);
+        message.setText(body);
         sendMail.send(message);
         System.out.println("sent email...");
     }

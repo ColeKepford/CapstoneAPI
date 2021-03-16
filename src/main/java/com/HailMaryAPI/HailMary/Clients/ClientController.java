@@ -13,10 +13,12 @@ import java.util.List;
 @CrossOrigin(origins="http://localhost:3000")
 public class ClientController {
     private final ClientService clientService;
+    private final SendEmailService sendEmailService;
 
     @Autowired
-    public ClientController(ClientService clientService) {
+    public ClientController(ClientService clientService, SendEmailService sendEmailService) {
         this.clientService = clientService;
+        this.sendEmailService = sendEmailService;
     }
 
     @GetMapping("/allClients")
@@ -42,7 +44,6 @@ public class ClientController {
 
     @PostMapping(path="/sendEmail", consumes = "application/json", produces = "application/json")
     public void sendEmail(@RequestBody Email email) {
-        SendEmailService emailService = new SendEmailService();
-        emailService.sendEmail(email);
+        this.sendEmailService.sendEmail(email);
     }
 }

@@ -16,6 +16,7 @@ public class Email {
         return this.to;
     }
 
+
     public String getTopic() {
         return this.topic;
     }

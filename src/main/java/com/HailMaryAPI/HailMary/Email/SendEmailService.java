@@ -19,12 +19,12 @@ public class SendEmailService  {
         "    <meta name=\"viewport\"\n" +
         "          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\n" +
         "    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n" +
-        "    <title>" + email.getTopic() + "</title>\n" +
+        "    <title>Client has contacted you</title>\n" +
         "</head>\n" +
         "<body>\n" +
-        "<div>Email from:<b>" + email.getFrom() + " " + email.getName() + "</b></div>\n" +
+        "<div>Email from:<b> Email: " + email.getFrom() + " <b>Name: " + email.getName() + "</b></div>\n" +
         "\n" +
-        "<div>" + email.getBody() + "</div>\n" +
+        "<div>" + email.getTopic() + "</div>\n" +
         "</body>\n" +
         "</html>\n";
 

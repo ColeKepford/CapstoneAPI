@@ -40,7 +40,7 @@ public class ClientController {
         return clientService.credentials(username, password);
     }
 
-    @PostMapping(path="/SendEmail", consumes = "application/json", produces = "application/json")
+    @PostMapping(path="/sendEmail", consumes = "application/json", produces = "application/json")
     public void sendEmail(@RequestBody Email email) {
         SendEmailService emailService = new SendEmailService();
         emailService.sendEmail(email);

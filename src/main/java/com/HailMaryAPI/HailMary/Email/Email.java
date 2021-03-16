@@ -5,9 +5,11 @@ public class Email {
     private String from;
     private String body;
     private String topic;
+    private String name;
 
-    public Email(String from, String body, String topic) {
+    public Email(String from, String name, String body, String topic) {
         this.from = from;
+        this.name = name;
         this.body = body;
         this.topic = topic;
     }
@@ -20,20 +22,19 @@ public class Email {
         return this.body;
     }
 
-    public void setBody(String body) {
-        this.body = body;
-    }
-
     public String getTopic() {
         return this.topic;
-    }
-
-    public void setTopic(String topic) {
-        this.topic = topic;
     }
 
     public String getFrom() {
         return this.from;
     }
+
+    public String getName() {
+        return name;
+    }
+
+
+    
     
 }

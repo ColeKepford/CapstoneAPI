@@ -22,7 +22,7 @@ public class SendEmailService  {
         "    <title>" + email.getTopic() + "</title>\n" +
         "</head>\n" +
         "<body>\n" +
-        "<div>Email from:<b>" + email.getFrom() + "</b></div>\n" +
+        "<div>Email from:<b>" + email.getFrom() + " " + email.getName() + "</b></div>\n" +
         "\n" +
         "<div>" + email.getBody() + "</div>\n" +
         "</body>\n" +

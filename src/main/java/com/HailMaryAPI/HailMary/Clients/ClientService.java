@@ -36,14 +36,14 @@ public class ClientService {
         }
     }
 
-    public Client getClientByEmail(String email) {
+    public int getClientByEmail(String email) {
         Optional<Client> clientOptional = clientRepository.findClientByEmail(email);
         if(clientOptional.isPresent()) {
             logs.clientRetrivedSuccessfully();
-            return clientOptional.get();
+            return clientOptional.get().getClient_id();
         } else {
             logs.clientDoesntExist();
-            return null;
+            return 0;
         }
     }
 

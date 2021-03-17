@@ -32,12 +32,8 @@ public class ClientController {
     }
 
     @GetMapping("/clientemail/{email}")
-<<<<<<< HEAD
-    public int getClientByEmail(@PathVariable String email) {
-=======
-    public Client getClientByEmail(@PathVariable String email) {
->>>>>>> ae2db1afa09ba899e446d28a26cb0f203416c5eb
-        return clientService.getClientByEmail(email);
+    public Client getClientIdByEmail(@PathVariable String email) {
+        return clientService.getClientIdByEmail(email);
     }
 
     @PostMapping(path="/registerClient", consumes = "application/json", produces = "application/json")

@@ -36,16 +36,16 @@ public class ClientService {
         }
     }
 
-    public int getClientByEmail(String email) {
-        Optional<Client> clientOptional = clientRepository.findClientByEmail(email);
-        if(clientOptional.isPresent()) {
-            logs.clientRetrivedSuccessfully();
-            return clientOptional.get().getClient_id();
-        } else {
-            logs.clientDoesntExist();
-            return 0;
-        }
-    }
+    public int getClientIdByEmail(String email) {
+      Optional<Client> clientOptional = clientRepository.findClientByEmail(email);
+      if(clientOptional.isPresent()) {
+          logs.clientRetrivedSuccessfully();
+          return clientOptional.get().getClient_id();
+      } else {
+          logs.clientDoesntExist();
+          return 0;
+      }
+  }
 
     public void addNewClient(Client client) {
         Optional<Client> clientOptional = clientRepository.findClientByEmail(client.getEmail());

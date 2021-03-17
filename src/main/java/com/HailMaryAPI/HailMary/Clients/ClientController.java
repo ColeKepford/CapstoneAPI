@@ -32,7 +32,7 @@ public class ClientController {
     }
 
     @GetMapping("/clientemail/{email}")
-    public Client getClientIdByEmail(@PathVariable String email) {
+    public int getClientIdByEmail(@PathVariable String email) {
         return clientService.getClientIdByEmail(email);
     }
 

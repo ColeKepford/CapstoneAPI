@@ -44,4 +44,8 @@ public class ClientService {
             throw new IllegalStateException("Client doesnt exist");
         }
     }
+
+    public void updateClient(Client client) {
+        clientRepository.save(client);
+    }
 }

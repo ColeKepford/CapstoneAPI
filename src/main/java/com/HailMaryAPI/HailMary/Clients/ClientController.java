@@ -46,4 +46,9 @@ public class ClientController {
     public void sendEmail(@RequestBody Email email) {
         this.sendEmailService.sendEmail(email);
     }
+
+    @PutMapping("/update")
+    public void updateClient(@RequestBody Client client) {
+        clientService.updateClient(client);
+    }
 }

@@ -31,4 +31,20 @@ public class LoggingController {
     public void clientRetrivedSuccessfully() {
         this.logger.info("Client was retrived successfully");
     }
+
+    public void adminDoesntExist() {
+        this.logger.error("Admin doesnt exist");
+    }
+
+    public void adminDoesExist() {
+        this.logger.error("Admin already exists");
+    }
+
+    public void adminRetrivedSuccessfully() {
+        this.logger.info("Admin was retrived successfully");
+    }
+
+    public void adminAddedSuccessfully() {
+        this.logger.info("Admin was added successfully");
+    }
 }

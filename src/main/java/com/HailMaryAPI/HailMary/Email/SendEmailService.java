@@ -13,12 +13,13 @@ public class SendEmailService {
 
     public void sendEmail(Email email) {
         boolean sent;
+        String nexgen = "nexgenfinancialinsurance@gmail.com";
         System.out.println("sending email...");
         try{
             SimpleMailMessage message = new SimpleMailMessage();
             String body = email.getName() + " has contacted you about: " + email.getTopic();
-            message.setFrom("nexgenfinancialinsurance@gmail.com");
-            message.setTo("nexgenfinancialinsurance@gmail.com");
+            message.setFrom(nexgen);
+            message.setTo(nexgen);
             message.setSubject("Email from: " + email.getFrom());
             message.setText(body);
             sendMail.send(message);
@@ -35,13 +36,13 @@ public class SendEmailService {
                 String response = "Thank you for contacting NexGen insruance! \n" + 
                                     "We have successfully recieved your email, please remain" +
                                     " patient while we get back to you";
-                message.setFrom("nexgenfinancialinsurance@gmail.com");
-                message.setTo(email.getTo());
+                message.setFrom(nexgen);
+                message.setTo(email.getFrom());
                 message.setSubject("Email recieved");
                 message.setText(response);
                 sendMail.send(message);
             } catch (Exception e) {
-                System.out.println("Unable to send response email...");
+                System.out.println("Unable to send response email");
             }
         }
     }

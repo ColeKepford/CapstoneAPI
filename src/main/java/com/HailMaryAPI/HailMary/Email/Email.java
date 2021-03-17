@@ -1,13 +1,11 @@
 package com.HailMaryAPI.HailMary.Email;
 
 public class Email {
-    private String to;
     private String from;
     private String topic;
     private String name;
 
-    public Email(String to, String from, String name, String topic) {
-        this.to = to;
+    public Email(String from, String name, String topic) {
         this.from = from;
         this.name = name;
         this.topic = topic;

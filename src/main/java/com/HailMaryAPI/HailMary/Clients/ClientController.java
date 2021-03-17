@@ -26,9 +26,14 @@ public class ClientController {
         return clientService.getAllClients();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public Client getClient(@PathVariable("id")Integer id) {
         return clientService.getClientById(id);
+    }
+
+    @GetMapping("/clientemail/{email}")
+    public Client getClientIdByEmail(@PathVariable String email) {
+        return clientService.getClientByEmail(email);;
     }
 
     @PostMapping(path="/registerClient", consumes = "application/json", produces = "application/json")

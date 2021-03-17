@@ -1,12 +1,13 @@
 package com.HailMaryAPI.HailMary.Email;
 
 public class Email {
-    private String to = "nexgenfinancialinsurance@gmail.com";
+    private String to;
     private String from;
     private String topic;
     private String name;
 
-    public Email(String from, String name, String topic) {
+    public Email(String to, String from, String name, String topic) {
+        this.to = to;
         this.from = from;
         this.name = name;
         this.topic = topic;
@@ -27,9 +28,6 @@ public class Email {
 
     public String getName() {
         return name;
-    }
-
-
-    
+    } 
     
 }

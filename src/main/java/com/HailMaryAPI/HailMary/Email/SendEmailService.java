@@ -12,16 +12,38 @@ public class SendEmailService {
     private JavaMailSender sendMail;
 
     public void sendEmail(Email email) {
-
-        String body = email.getName() + " has contacted you about: " + email.getTopic();
+        boolean sent;
         System.out.println("sending email...");
-        SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("nexgenfinancialinsurance@gmail.com");
-        message.setTo("nexgenfinancialinsurance@gmail.com");
-        message.setSubject("Email from: " + email.getFrom());
-        message.setText(body);
-        sendMail.send(message);
-        System.out.println("sent email...");
+        try{
+            SimpleMailMessage message = new SimpleMailMessage();
+            String body = email.getName() + " has contacted you about: " + email.getTopic();
+            message.setFrom("nexgenfinancialinsurance@gmail.com");
+            message.setTo("nexgenfinancialinsurance@gmail.com");
+            message.setSubject("Email from: " + email.getFrom());
+            message.setText(body);
+            sendMail.send(message);
+            System.out.println("Email sent successfully");
+            sent = true;
+        } catch(Exception e) {
+            System.out.println("Unable to send email");
+            sent = false;
+        }
+        if(sent) {
+            System.out.println("sending response email...");
+                try{
+                SimpleMailMessage message = new SimpleMailMessage();
+                String response = "Thank you for contacting NexGen insruance! \n" + 
+                                    "We have successfully recieved your email, please remain" +
+                                    " patient while we get back to you";
+                message.setFrom("nexgenfinancialinsurance@gmail.com");
+                message.setTo(email.getTo());
+                message.setSubject("Email recieved");
+                message.setText(response);
+                sendMail.send(message);
+            } catch (Exception e) {
+                System.out.println("Unable to send response email...");
+            }
+        }
     }
 }
     

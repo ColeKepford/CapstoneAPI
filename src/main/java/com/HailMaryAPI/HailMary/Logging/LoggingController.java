@@ -59,4 +59,24 @@ public class LoggingController {
     public void unableToSendEmail() {
         this.logger.error("Error sending email");
     }
+
+    public void policyRetrievedSuccessfully() {
+        this.logger.info("Policies were retrieved successfully");
+    }
+
+    public void unableToFindPolicy() {
+        this.logger.error("No policies were found");
+    }
+
+    public void policyExists() {
+        this.logger.error("Policy already exists");
+    }
+
+    public void policyAddedSuccessfully() {
+        this.logger.info("Policy successfully added");
+    }
+
+    public void policyDeletedSuccessfully() {
+        this.logger.info("Policy successfully deleted");
+    }
 }

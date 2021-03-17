@@ -45,7 +45,24 @@ public class ClientService {
         }
     }
 
-    public void updateClient(Client client) {
-        clientRepository.save(client);
+    public String updateClient(Client client) {
+        List<Client> allClients= getAllClients();
+        try{
+            allClients.stream().filter(e -> e.getClient_id() == client.getClient_id()).forEach(e -> {
+                e.setCountry(client.getCountry());
+                e.setDob(client.getDob());
+                e.setEmail(client.getEmail());
+                e.setFirst_name(client.getFirst_name());
+                e.setLast_name(client.getLast_name());
+                e.setPassword(client.getPassword());
+                e.setPhone_number(client.getPhone_number());
+                e.setPostal_code(client.getPostal_code());
+                e.setProv(client.getProv());
+                e.setStreet_address(client.getStreet_address());
+            });
+        }catch (Exception e) {
+            return "Unable to update client";
+        }
+            return "Update successfull";
     }
 }

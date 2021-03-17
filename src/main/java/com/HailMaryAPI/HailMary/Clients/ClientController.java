@@ -49,6 +49,6 @@ public class ClientController {
 
     @PutMapping("/update")
     public void updateClient(@RequestBody Client client) {
-        clientService.updateClient(client);
+       System.out.println(clientService.updateClient(client));
     }
 }

@@ -11,11 +11,6 @@ public class Email {
         this.topic = topic;
     }
 
-    public String getTo() {
-        return this.to;
-    }
-
-
     public String getTopic() {
         return this.topic;
     }

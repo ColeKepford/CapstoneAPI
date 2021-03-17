@@ -32,7 +32,7 @@ public class ClientController {
     }
 
     @GetMapping("/clientemail/{email}")
-    public Client getClientIdByEmail(@PathVariable String email) {
+    public Client getClientByEmail(@PathVariable String email) {
         return clientService.getClientByEmail(email);;
     }
 
@@ -54,6 +54,6 @@ public class ClientController {
 
     @PutMapping("/update")
     public void updateClient(@RequestBody Client client) {
-       System.out.println(clientService.updateClient(client));
+       clientService.updateClient(client);
     }
 }

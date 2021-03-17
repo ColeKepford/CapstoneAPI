@@ -6,15 +6,19 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+import com.HailMaryAPI.HailMary.Logging.LoggingController;
+
 
 
 @Service
 public class PolicyService {
     private final PolicyRepository policyRepository;
+    private final LoggingController logs;
 
     @Autowired
-    public PolicyService(PolicyRepository policyRepository) {
+    public PolicyService(PolicyRepository policyRepository, LoggingController logs) {
         this.policyRepository = policyRepository;
+        this.logs = logs;
     }
 
     public List<Policy> getAllPolicies() {
@@ -26,9 +30,11 @@ public class PolicyService {
         policyRepository.findPoliciesByEmail(email);
         if(policiesOptional.isPresent()) {
             List<Policy> policies = policiesOptional.get();
+            logs.policyRetrievedSuccessfully();
             return policies;
         }
-        throw new IllegalStateException("No policies under that email");
+        this.logs.unableToFindPolicy();
+        return null;
     }
 
         public List<Policy> findByName(String first_name, String last_name) {
@@ -36,40 +42,46 @@ public class PolicyService {
             
             if(policiesOptional.isPresent()) {
                 List<Policy> policies = policiesOptional.get();
+                logs.policyRetrievedSuccessfully();
                 return policies;
             }
-        throw new IllegalStateException("No policies under that name");
+        this.logs.unableToFindPolicy();
+        return null;
     }
 
     public Policy getPolicyById(int id) {
         boolean exists = policyRepository.existsById(id);
         if(!exists) {
-            throw new IllegalStateException("Client doesn't exist");
+            logs.unableToFindPolicy();
         }
+        logs.policyRetrievedSuccessfully();
         return policyRepository.getOne(id);
     }
 
     public void addNewPolicy(Policy policy) {
         Optional<Policy> policyOptional = policyRepository.findById(policy.getPolicy_id());
         if(policyOptional.isPresent()) {
-            throw new IllegalStateException("Policy with that ID already exists");
+            logs.policyExists();
         }
+        logs.policyAddedSuccessfully();
         policyRepository.save(policy);
     }
 
     public void deletePolicy(Policy policy) {
         Optional<Policy> policyOptional = policyRepository.findById(policy.getPolicy_id());
         if(!policyOptional.isPresent()) {
-            throw new IllegalStateException("That policy doesn't exist");
+            logs.unableToFindPolicy();
         }
         policyRepository.delete(policy);
+        logs.policyDeletedSuccessfully();
     }
 
     public void deletePolicyById(int id) {
         Optional<Policy> policyOptional = policyRepository.findById(id);
         if(policyOptional.isPresent()) {
-            throw new IllegalStateException("Policy with that ID doesn't exist");
+            logs.unableToFindPolicy();
         }
         policyRepository.deleteById(id);
+        logs.policyDeletedSuccessfully();
     }
 }

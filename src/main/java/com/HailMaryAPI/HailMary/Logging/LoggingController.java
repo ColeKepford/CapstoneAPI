@@ -31,4 +31,52 @@ public class LoggingController {
     public void clientRetrivedSuccessfully() {
         this.logger.info("Client was retrived successfully");
     }
+
+    public void adminDoesntExist() {
+        this.logger.error("Admin doesnt exist");
+    }
+
+    public void adminDoesExist() {
+        this.logger.error("Admin already exists");
+    }
+
+    public void adminRetrivedSuccessfully() {
+        this.logger.info("Admin was retrived successfully");
+    }
+
+    public void adminAddedSuccessfully() {
+        this.logger.info("Admin was added successfully");
+    }
+
+    public void sendingEmail() {
+        this.logger.info("Sending email...");
+    }
+
+    public void emailSent() {
+        this.logger.info("Email was sent successfully");
+    }
+
+    public void unableToSendEmail() {
+        this.logger.error("Error sending email");
+    }
+
+    public void policyRetrievedSuccessfully() {
+        this.logger.info("Policies were retrieved successfully");
+    }
+
+    public void unableToFindPolicy() {
+        this.logger.error("No policies were found");
+    }
+
+    public void policyExists() {
+        this.logger.error("Policy already exists");
+    }
+
+    public void policyAddedSuccessfully() {
+        this.logger.info("Policy successfully added");
+    }
+
+    public void policyDeletedSuccessfully() {
+        this.logger.info("Policy successfully deleted");
+    }
 }

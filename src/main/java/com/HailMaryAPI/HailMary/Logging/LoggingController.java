@@ -47,4 +47,16 @@ public class LoggingController {
     public void adminAddedSuccessfully() {
         this.logger.info("Admin was added successfully");
     }
+
+    public void sendingEmail() {
+        this.logger.info("Sending email...");
+    }
+
+    public void emailSent() {
+        this.logger.info("Email was sent successfully");
+    }
+
+    public void unableToSendEmail() {
+        this.logger.error("Error sending email");
+    }
 }

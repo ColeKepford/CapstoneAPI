@@ -1,5 +1,7 @@
 package com.HailMaryAPI.HailMary.Email;
 
+import com.HailMaryAPI.HailMary.Logging.LoggingController;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Component;
@@ -10,11 +12,12 @@ public class SendEmailService {
 
     @Autowired
     private JavaMailSender sendMail;
+    private LoggingController logs;
 
     public void sendEmail(Email email) {
         boolean sent;
         String nexgen = "nexgenfinancialinsurance@gmail.com";
-        System.out.println("sending email...");
+        this.logs.sendingEmail();
         try{
             SimpleMailMessage message = new SimpleMailMessage();
             String body = email.getName() + " has contacted you about: " + email.getTopic();
@@ -23,14 +26,14 @@ public class SendEmailService {
             message.setSubject("Email from: " + email.getFrom());
             message.setText(body);
             sendMail.send(message);
-            System.out.println("Email sent successfully");
+            this.logs.emailSent();
             sent = true;
         } catch(Exception e) {
-            System.out.println("Unable to send email");
+            this.logs.unableToSendEmail();
             sent = false;
         }
         if(sent) {
-            System.out.println("sending response email...");
+            this.logs.sendingEmail();
                 try{
                 SimpleMailMessage message = new SimpleMailMessage();
                 String response = "Thank you for contacting NexGen insruance! \n" + 
@@ -42,7 +45,7 @@ public class SendEmailService {
                 message.setText(response);
                 sendMail.send(message);
             } catch (Exception e) {
-                System.out.println("Unable to send response email");
+                this.logs.unableToSendEmail();
             }
         }
     }

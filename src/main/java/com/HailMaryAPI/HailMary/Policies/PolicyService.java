@@ -30,10 +30,10 @@ public class PolicyService {
         policyRepository.findPoliciesByEmail(email);
         if(policiesOptional.isPresent()) {
             List<Policy> policies = policiesOptional.get();
-            logs.policyRetrievedSuccessfully();
+            logs.policyRetrievedSuccessfully("email");
             return policies;
         }
-        this.logs.unableToFindPolicy();
+        this.logs.unableToFindPolicy("email");
         return null;
     }
 
@@ -41,10 +41,10 @@ public class PolicyService {
       Optional<List<Policy>> policiesOptional = policyRepository.findPoliciesByClientId(id);
       if(policiesOptional.isPresent()) {
           List<Policy> policies = policiesOptional.get();
-          logs.policyRetrievedSuccessfully();
+          logs.policyRetrievedSuccessfully("client ID");
           return policies;
       }
-      this.logs.unableToFindPolicy();
+      this.logs.unableToFindPolicy("client ID");
       return null;
   }
 
@@ -53,19 +53,19 @@ public class PolicyService {
             
             if(policiesOptional.isPresent()) {
                 List<Policy> policies = policiesOptional.get();
-                logs.policyRetrievedSuccessfully();
+                logs.policyRetrievedSuccessfully("name");
                 return policies;
             }
-        this.logs.unableToFindPolicy();
+        this.logs.unableToFindPolicy("name");
         return null;
     }
 
     public Policy getPolicyById(int id) {
         boolean exists = policyRepository.existsById(id);
         if(!exists) {
-            logs.unableToFindPolicy();
+            logs.unableToFindPolicy("ID");
         }
-        logs.policyRetrievedSuccessfully();
+        logs.policyRetrievedSuccessfully("ID");
         return policyRepository.getOne(id);
     }
 
@@ -81,18 +81,18 @@ public class PolicyService {
     public void deletePolicy(Policy policy) {
         Optional<Policy> policyOptional = policyRepository.findById(policy.getPolicy_id());
         if(!policyOptional.isPresent()) {
-            logs.unableToFindPolicy();
+            logs.unableToFindPolicy("searching");
         }
         policyRepository.delete(policy);
-        logs.policyDeletedSuccessfully();
+        logs.policyDeletedSuccessfully("main deletion");
     }
 
     public void deletePolicyById(int id) {
         Optional<Policy> policyOptional = policyRepository.findById(id);
         if(policyOptional.isPresent()) {
-            logs.unableToFindPolicy();
+            logs.unableToFindPolicy("ID");
         }
         policyRepository.deleteById(id);
-        logs.policyDeletedSuccessfully();
+        logs.policyDeletedSuccessfully("ID");
     }
 }

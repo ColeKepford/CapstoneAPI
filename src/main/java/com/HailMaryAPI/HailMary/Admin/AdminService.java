@@ -23,29 +23,29 @@ public class AdminService {
     public Admin getAdminById(int id) {
         boolean exists = adminRepository.existsById(id);
         if(!exists) {
-            logs.adminDoesntExist();
+            logs.adminDoesntExist("ID");
         }
-        logs.adminRetrivedSuccessfully();
+        logs.adminRetrievedSuccessfully("ID");
         return adminRepository.getOne(id);
     }
 
     public void addNewAdmin(Admin admin) {
         Optional<Admin> adminOptional = adminRepository.findAdminByEmail(admin.getEmail());
         if(adminOptional.isPresent()) {
-            logs.adminDoesExist();
+            logs.adminDoesExist("credentials");
         }
-        logs.adminAddedSuccessfully();
+        logs.adminAddedSuccessfully("credentials");
         adminRepository.save(admin);
     }
 
     public Admin credentials(String email, String password){
         Optional<Admin> adminOptional = adminRepository.findAdmin(email,password);
         if(adminOptional.isPresent()){
-            logs.adminRetrivedSuccessfully();
+            logs.adminRetrievedSuccessfully("credentials");
             return adminOptional.get();
         }
         else {
-            logs.adminDoesntExist();
+            logs.adminDoesntExist("credentials");
             return null;
         }
     }

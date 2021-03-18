@@ -20,18 +20,18 @@ public class ClientService {
     }
 
     public List<Client> getAllClients() {
-        logs.clientRetrivedSuccessfully();
+        logs.clientRetrievedSuccessfully("information");
         return clientRepository.findAll();
     }
 
     public Client getClientById(int id) {
         boolean exists = clientRepository.existsById(id);
         if(!exists) {
-            logs.clientDoesntExist();
+            logs.clientDoesntExist("ID");
             return null;
         }
         else{
-            logs.clientRetrivedSuccessfully();
+            logs.clientRetrievedSuccessfully("ID");
             return clientRepository.getOne(id);
         }
     }
@@ -39,10 +39,10 @@ public class ClientService {
     public Client getClientByEmail(String email) {
         Optional<Client> clientOptional = clientRepository.findClientByEmail(email);
         if(clientOptional.isPresent()) {
-            logs.clientRetrivedSuccessfully();
+            logs.clientRetrievedSuccessfully("email");
             return clientOptional.get();
         } else {
-            logs.clientDoesntExist();
+            logs.clientDoesntExist("email");
             return null;
         }
     }
@@ -50,20 +50,20 @@ public class ClientService {
     public void addNewClient(Client client) {
         Optional<Client> clientOptional = clientRepository.findClientByEmail(client.getEmail());
         if(clientOptional.isPresent()) {
-            logs.clientDoesExist();
+            logs.clientDoesExist("credentials");
         }
         clientRepository.save(client);
-        logs.clientAddedSuccessfully();
+        logs.clientAddedSuccessfully("credentials");
     }
 
     public Client credentials(String email, String password){
         Optional<Client> clientOptional = clientRepository.findClient(email,password);
         if(clientOptional.isPresent()){
-            logs.clientRetrivedSuccessfully();
+            logs.clientRetrievedSuccessfully("credentials");
             return clientOptional.get();
         }
         else {
-            logs.clientDoesntExist();
+            logs.clientDoesntExist("credentials");
             return null;
         }
     }
@@ -75,9 +75,9 @@ public class ClientService {
                 client.getPhone_number(), client.getStreet_address(), client.getProv(), client.getCountry(),
                 client.getPostal_code(), client.getPassword(), client.getClient_id());
          
-            logs.updateSuccessfull();
+            logs.updateSuccessful("client");
         } else {
-            logs.unableToUpdateClient();
+            logs.unableToUpdateClient("client");
         }
     }
 
@@ -85,9 +85,9 @@ public class ClientService {
         Optional<Client> clientOptional = clientRepository.findById(client.getClient_id());
         if(clientOptional.isPresent()) {
             clientRepository.deleteClient(client.getClient_id());
-            logs.clientdDeletedSuccessfully();
+            logs.clientDeletedSuccessfully("information");
         } else {
-            logs.unableToDeleteClient();
+            logs.unableToDeleteClient("information");
         }
     }
 }

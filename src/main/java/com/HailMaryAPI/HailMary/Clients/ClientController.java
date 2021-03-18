@@ -56,4 +56,9 @@ public class ClientController {
     public void updateClient(@RequestBody Client client) {
        clientService.updateClient(client);
     }
+
+    @PutMapping("/delete")
+    public void deleteClient(@RequestBody Client client) {
+        clientService.deleteClient(client);
+    }
 }

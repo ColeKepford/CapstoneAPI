@@ -33,7 +33,6 @@ public class SendEmailService {
             sent = false;
         }
         if(sent) {
-            this.logs.sendingEmail();
                 try{
                 SimpleMailMessage message = new SimpleMailMessage();
                 String response = "Thank you for contacting NexGen insruance! \n" + 

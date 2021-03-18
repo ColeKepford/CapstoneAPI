@@ -24,4 +24,9 @@ public interface ClientRepository extends JpaRepository<Client, Integer> {
     void updateClient(String email, String first_name, String last_name, String date_of_birth,
                                     Long phone_number, String street_address, String province, String country,
                                     String postal_code, String password, int id);
+    
+    @Transactional
+    @Modifying
+    @Query("DELETE FROM Client WHERE client_id=?1")
+    void deleteClient(int id);
 }

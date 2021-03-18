@@ -32,6 +32,10 @@ public class LoggingController {
         this.logger.info("Client was retrived successfully");
     }
 
+    public void clientdDeletedSuccessfully() {
+        this.logger.info("Client was deleted successfully");
+    }
+
     public void adminDoesntExist() {
         this.logger.error("Admin doesnt exist");
     }

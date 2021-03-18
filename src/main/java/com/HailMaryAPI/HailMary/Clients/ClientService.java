@@ -75,4 +75,9 @@ public class ClientService {
          
         logs.updateSuccessfull();
     }
+
+    public void deleteClient(Client client) {
+        clientRepository.deleteClient(client.getClient_id());
+        logs.clientdDeletedSuccessfully();
+    }
 }

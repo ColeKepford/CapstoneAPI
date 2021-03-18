@@ -8,52 +8,52 @@ import org.slf4j.LoggerFactory;
 public class LoggingController {
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    public void clientDoesntExist() {
-        this.logger.error("Client doesnt exist");
+    public void clientDoesntExist(String s) {
+        this.logger.error("Client's " + s + " doesn't exist");
     }
 
-    public void clientDoesExist() {
-        this.logger.error("Client already exists");
+    public void clientDoesExist(String s) {
+        this.logger.error("Client's " + s + " already exists");
     }
 
-    public void unableToUpdateClient() {
-        this.logger.error("Failed to update client");
+    public void unableToUpdateClient(String s) {
+        this.logger.error("Failed to update client's " + s);
     }
 
-    public void updateSuccessfull() {
-        this.logger.info("Updated successfully");
+    public void updateSuccessful(String s) {
+        this.logger.info("Updated " + s + " successfully");
     }
 
-    public void clientAddedSuccessfully() {
-        this.logger.info("Client was added successfully");
+    public void clientAddedSuccessfully(String s) {
+        this.logger.info("Client's" + s + " was added successfully");
     }
 
-    public void clientRetrivedSuccessfully() {
-        this.logger.info("Client was retrieved successfully");
+    public void clientRetrievedSuccessfully(String s) {
+        this.logger.info("Client's " + s + " was retrieved successfully");
     }
 
-    public void clientdDeletedSuccessfully() {
-        this.logger.info("Client was deleted successfully");
+    public void clientDeletedSuccessfully(String s) {
+        this.logger.info("Client's " + s + " was deleted successfully");
     }
 
-    public void unableToDeleteClient() {
-        this.logger.error("Failed to delete client");
+    public void unableToDeleteClient(String s) {
+        this.logger.error("Failed to delete client's " + s);
     }
 
-    public void adminDoesntExist() {
-        this.logger.error("Admin doesnt exist");
+    public void adminDoesntExist(String s) {
+        this.logger.error("Admin's " + s + " doesn't exist");
     }
 
-    public void adminDoesExist() {
-        this.logger.error("Admin already exists");
+    public void adminDoesExist(String s) {
+        this.logger.error("Admin's " + s + " already exists");
     }
 
-    public void adminRetrivedSuccessfully() {
-        this.logger.info("Admin was retreived successfully");
+    public void adminRetrievedSuccessfully(String s) {
+        this.logger.info("Admin's " + s + " was retrieved successfully");
     }
 
-    public void adminAddedSuccessfully() {
-        this.logger.info("Admin was added successfully");
+    public void adminAddedSuccessfully(String s) {
+        this.logger.info("Admin's " + s + " was added successfully");
     }
 
     public void sendingEmail() {
@@ -64,16 +64,16 @@ public class LoggingController {
         this.logger.info("Email was sent successfully");
     }
 
-    public void unableToSendEmail() {
-        this.logger.error("Error sending email");
+    public void unableToSendEmail(String s) {
+        this.logger.error("Error sending email. " + s);
     }
 
-    public void policyRetrievedSuccessfully() {
-        this.logger.info("Policies were retrieved successfully");
+    public void policyRetrievedSuccessfully(String s) {
+        this.logger.info("Policies were retrieved successfully through " + s);
     }
 
-    public void unableToFindPolicy() {
-        this.logger.error("No policies were found");
+    public void unableToFindPolicy(String s) {
+        this.logger.error("No policies were found through " + s);
     }
 
     public void policyExists() {
@@ -84,7 +84,7 @@ public class LoggingController {
         this.logger.info("Policy successfully added");
     }
 
-    public void policyDeletedSuccessfully() {
-        this.logger.info("Policy successfully deleted");
+    public void policyDeletedSuccessfully(String s) {
+        this.logger.info("Policy successfully deleted by " + s);
     }
 }

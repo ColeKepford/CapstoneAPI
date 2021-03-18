@@ -4,11 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-<<<<<<< HEAD
-@RequestMapping(value = "/policies")
-=======
 @RequestMapping("/policies")
->>>>>>> ac43441a6ab671669c2d61c81e20bae59b143faf
 @CrossOrigin(origins="http://localhost:3000")
 public class PolicyController {
     private final PolicyService policyService;

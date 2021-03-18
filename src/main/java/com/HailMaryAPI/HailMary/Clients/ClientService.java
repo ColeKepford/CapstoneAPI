@@ -72,6 +72,7 @@ public class ClientService {
         clientRepository.updateClient(client.getEmail(), client.getFirst_name(), client.getLast_name(), client.getDob(), 
         client.getPhone_number(), client.getStreet_address(), client.getProv(), client.getCountry(),
          client.getPostal_code(), client.getPassword(), client.getClient_id());
-        
+         
+        logs.updateSuccessfull();
     }
 }

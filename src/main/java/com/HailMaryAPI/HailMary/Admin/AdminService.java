@@ -25,7 +25,7 @@ public class AdminService {
         if(!exists) {
             logs.adminDoesntExist();
         }
-        logs.adminDoesExist();
+        logs.adminRetrivedSuccessfully();
         return adminRepository.getOne(id);
     }
 

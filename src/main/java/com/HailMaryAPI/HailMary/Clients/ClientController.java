@@ -41,10 +41,10 @@ public class ClientController {
         clientService.addNewClient(client);
     }
 
-    @GetMapping("/login/{username}&{password}")
-    public Client logon(@PathVariable("username") String username,
+    @GetMapping("/login/{email}&{password}")
+    public Client logon(@PathVariable("email") String email,
                       @PathVariable("password") String password) {
-        return clientService.credentials(username, password);
+        return clientService.credentials(email, password);
     }
 
     @PostMapping(path="/sendEmail", consumes = "application/json", produces = "application/json")

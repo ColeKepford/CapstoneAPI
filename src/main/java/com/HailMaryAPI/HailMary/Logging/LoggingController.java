@@ -29,7 +29,7 @@ public class LoggingController {
     }
 
     public void clientRetrivedSuccessfully() {
-        this.logger.info("Client was retrived successfully");
+        this.logger.info("Client was retrieved successfully");
     }
 
     public void clientdDeletedSuccessfully() {
@@ -49,7 +49,7 @@ public class LoggingController {
     }
 
     public void adminRetrivedSuccessfully() {
-        this.logger.info("Admin was retrived successfully");
+        this.logger.info("Admin was retreived successfully");
     }
 
     public void adminAddedSuccessfully() {

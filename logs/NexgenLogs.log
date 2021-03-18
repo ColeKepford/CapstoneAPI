@@ -1,0 +1,5 @@
+2021-03-17 21:26:36,482 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 23908 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-17 21:26:36,485 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-17 21:26:39,054 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.882 seconds (JVM running for 3.147)
+2021-03-17 21:26:42,299 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Client was retrived successfully
+2021-03-17 21:28:49,796 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client doesnt exist

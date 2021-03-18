@@ -69,7 +69,7 @@ public class ClientService {
     }
 
     public void updateClient(Client client) {
-        Optional<Client> clientOptional = clientRepository.findClientByEmail(client.getEmail());
+        Optional<Client> clientOptional = clientRepository.findById(client.getClient_id());
         if(clientOptional.isPresent()) {
             clientRepository.updateClient(client.getEmail(), client.getFirst_name(), client.getLast_name(), client.getDob(), 
                 client.getPhone_number(), client.getStreet_address(), client.getProv(), client.getCountry(),
@@ -82,7 +82,7 @@ public class ClientService {
     }
 
     public void deleteClient(Client client) {
-        Optional<Client> clientOptional = clientRepository.findClientByEmail(client.getEmail());
+        Optional<Client> clientOptional = clientRepository.findById(client.getClient_id());
         if(clientOptional.isPresent()) {
             clientRepository.deleteClient(client.getClient_id());
             logs.clientdDeletedSuccessfully();

@@ -69,15 +69,25 @@ public class ClientService {
     }
 
     public void updateClient(Client client) {
-        clientRepository.updateClient(client.getEmail(), client.getFirst_name(), client.getLast_name(), client.getDob(), 
-        client.getPhone_number(), client.getStreet_address(), client.getProv(), client.getCountry(),
-         client.getPostal_code(), client.getPassword(), client.getClient_id());
+        Optional<Client> clientOptional = clientRepository.findClientByEmail(client.getEmail());
+        if(clientOptional.isPresent()) {
+            clientRepository.updateClient(client.getEmail(), client.getFirst_name(), client.getLast_name(), client.getDob(), 
+                client.getPhone_number(), client.getStreet_address(), client.getProv(), client.getCountry(),
+                client.getPostal_code(), client.getPassword(), client.getClient_id());
          
-        logs.updateSuccessfull();
+            logs.updateSuccessfull();
+        } else {
+            logs.unableToUpdateClient();
+        }
     }
 
     public void deleteClient(Client client) {
-        clientRepository.deleteClient(client.getClient_id());
-        logs.clientdDeletedSuccessfully();
+        Optional<Client> clientOptional = clientRepository.findClientByEmail(client.getEmail());
+        if(clientOptional.isPresent()) {
+            clientRepository.deleteClient(client.getClient_id());
+            logs.clientdDeletedSuccessfully();
+        } else {
+            logs.unableToDeleteClient();
+        }
     }
 }

@@ -16,7 +16,7 @@ public class LoggingController {
         this.logger.error("Client already exists");
     }
 
-    public void unableToUpdate() {
+    public void unableToUpdateClient() {
         this.logger.error("Failed to update client");
     }
 
@@ -34,6 +34,10 @@ public class LoggingController {
 
     public void clientdDeletedSuccessfully() {
         this.logger.info("Client was deleted successfully");
+    }
+
+    public void unableToDeleteClient() {
+        this.logger.error("Failed to delete client");
     }
 
     public void adminDoesntExist() {

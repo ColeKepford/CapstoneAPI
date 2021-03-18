@@ -24,7 +24,11 @@ public class PolicyController {
       return policyService.getAllPoliciesByEmail(email);
     }
 
-    
+    @GetMapping(value = "/clientId:{id}")
+    public List<Policy> getPoliciesByClientId(@PathVariable("id") int id) {
+      return policyService.getAllPoliciesByClientId(id);
+    }
+
     @GetMapping(value = "/id:{id}") 
     public Policy getPolicy(@PathVariable("id")Integer id) {
         return policyService.getPolicyById(id);

@@ -37,6 +37,17 @@ public class PolicyService {
         return null;
     }
 
+    public List<Policy> getAllPoliciesByClientId(int id) {
+      Optional<List<Policy>> policiesOptional = policyRepository.findPoliciesByClientId(id);
+      if(policiesOptional.isPresent()) {
+          List<Policy> policies = policiesOptional.get();
+          logs.policyRetrievedSuccessfully();
+          return policies;
+      }
+      this.logs.unableToFindPolicy();
+      return null;
+  }
+
         public List<Policy> findByName(String first_name, String last_name) {
             Optional<List<Policy>> policiesOptional = policyRepository.findByName(first_name, last_name);
             

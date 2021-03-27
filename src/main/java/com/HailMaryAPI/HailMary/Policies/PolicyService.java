@@ -30,10 +30,10 @@ public class PolicyService {
         policyRepository.findPoliciesByEmail(email);
         if(policiesOptional.isPresent()) {
             List<Policy> policies = policiesOptional.get();
-            logs.policyRetrievedSuccessfully("email");
+            logs.policyRetrievedSuccessfully("Policies for " + email + " were retrieved successfully");
             return policies;
         }
-        this.logs.unableToFindPolicy("email");
+        this.logs.unableToFindPolicy("No policies found for " + email);
         return null;
     }
 
@@ -41,10 +41,10 @@ public class PolicyService {
       Optional<List<Policy>> policiesOptional = policyRepository.findPoliciesByClientId(id);
       if(policiesOptional.isPresent()) {
           List<Policy> policies = policiesOptional.get();
-          logs.policyRetrievedSuccessfully("client ID");
+          logs.policyRetrievedSuccessfully("Policies for client " + id + " were retrieved successfully");
           return policies;
       }
-      this.logs.unableToFindPolicy("client ID");
+      this.logs.unableToFindPolicy("No policies found for client " + id);
       return null;
   }
 
@@ -53,46 +53,46 @@ public class PolicyService {
             
             if(policiesOptional.isPresent()) {
                 List<Policy> policies = policiesOptional.get();
-                logs.policyRetrievedSuccessfully("name");
+                logs.policyRetrievedSuccessfully("Policies for " + first_name + " " + last_name + " were retrieved successfully");
                 return policies;
             }
-        this.logs.unableToFindPolicy("name");
+        this.logs.unableToFindPolicy("No policies found for "  + first_name + " " + last_name);
         return null;
     }
 
     public Policy getPolicyById(int id) {
         boolean exists = policyRepository.existsById(id);
         if(!exists) {
-            logs.unableToFindPolicy("ID");
+            logs.unableToFindPolicy("Unable to find the policy with id: " + id);
         }
-        logs.policyRetrievedSuccessfully("ID");
+        logs.policyRetrievedSuccessfully("Policy with id: " + id + " was retrieved");
         return policyRepository.getOne(id);
     }
 
     public void addNewPolicy(Policy policy) {
         Optional<Policy> policyOptional = policyRepository.findById(policy.getPolicy_id());
         if(policyOptional.isPresent()) {
-            logs.policyExists();
+            logs.policyExists("Policy " + policy.getPolicy_id() + " already exsists");
         }
-        logs.policyAddedSuccessfully();
+        logs.policyAddedSuccessfully("Policy was successfully added");
         policyRepository.save(policy);
     }
 
     public void deletePolicy(Policy policy) {
         Optional<Policy> policyOptional = policyRepository.findById(policy.getPolicy_id());
         if(!policyOptional.isPresent()) {
-            logs.unableToFindPolicy("searching");
+            logs.unableToFindPolicy("Policy " + policy.getPolicy_id() + " does not exsist");
         }
         policyRepository.delete(policy);
-        logs.policyDeletedSuccessfully("main deletion");
+        logs.policyDeletedSuccessfully("Policy " + policy.getPolicy_id() + " was deleted");
     }
 
     public void deletePolicyById(int id) {
         Optional<Policy> policyOptional = policyRepository.findById(id);
         if(policyOptional.isPresent()) {
-            logs.unableToFindPolicy("ID");
+            logs.unableToFindPolicy("Policy " + id + " does not exsist");
         }
         policyRepository.deleteById(id);
-        logs.policyDeletedSuccessfully("ID");
+        logs.policyDeletedSuccessfully("Policy " + id + " was deleted");
     }
 }

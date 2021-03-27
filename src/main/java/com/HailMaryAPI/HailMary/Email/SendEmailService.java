@@ -17,7 +17,7 @@ public class SendEmailService {
     public void sendEmail(Email email) {
         boolean sent;
         String nexgen = "nexgenfinancialinsurance@gmail.com";
-        this.logs.sendingEmail();
+        this.logs.sendingEmail("Sending email from: " + email.getName());
         try{
             SimpleMailMessage message = new SimpleMailMessage();
             String body = email.getName() + " has contacted you about: " + email.getTopic();
@@ -26,10 +26,10 @@ public class SendEmailService {
             message.setSubject("Email from: " + email.getFrom());
             message.setText(body);
             sendMail.send(message);
-            this.logs.emailSent();
+            this.logs.emailSent("Email sent from: " +email.getName());
             sent = true;
         } catch(Exception e) {
-            this.logs.unableToSendEmail("Error code 1.");
+            this.logs.unableToSendEmail("Unable to send email from: " + email.getName());
             sent = false;
         }
         if(sent) {
@@ -44,7 +44,7 @@ public class SendEmailService {
                 message.setText(response);
                 sendMail.send(message);
             } catch (Exception e) {
-                this.logs.unableToSendEmail("Error code 2.");
+                this.logs.unableToSendEmail("Unable to retrieve email from: " + email.getName());
             }
         }
     }

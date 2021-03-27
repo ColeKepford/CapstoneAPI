@@ -9,82 +9,98 @@ public class LoggingController {
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
     public void clientDoesntExist(String s) {
-        this.logger.error("Client's " + s + " doesn't exist");
+        this.logger.error(s);
     }
 
     public void clientDoesExist(String s) {
-        this.logger.error("Client's " + s + " already exists");
+        this.logger.error(s);
     }
 
     public void unableToUpdateClient(String s) {
-        this.logger.error("Failed to update client's " + s);
+        this.logger.error(s);
     }
 
     public void updateSuccessful(String s) {
-        this.logger.info("Updated " + s + " successfully");
+        this.logger.info(s);
     }
 
     public void clientAddedSuccessfully(String s) {
-        this.logger.info("Client's" + s + " was added successfully");
+        this.logger.info(s);
     }
 
     public void clientRetrievedSuccessfully(String s) {
-        this.logger.info("Client's " + s + " was retrieved successfully");
+        this.logger.info(s);
     }
 
     public void clientDeletedSuccessfully(String s) {
-        this.logger.info("Client's " + s + " was deleted successfully");
+        this.logger.info(s);
     }
 
     public void unableToDeleteClient(String s) {
-        this.logger.error("Failed to delete client's " + s);
+        this.logger.error(s);
     }
 
     public void adminDoesntExist(String s) {
-        this.logger.error("Admin's " + s + " doesn't exist");
+        this.logger.error(s);
     }
 
     public void adminDoesExist(String s) {
-        this.logger.error("Admin's " + s + " already exists");
+        this.logger.error(s);
     }
 
     public void adminRetrievedSuccessfully(String s) {
-        this.logger.info("Admin's " + s + " was retrieved successfully");
+        this.logger.info(s);
     }
 
     public void adminAddedSuccessfully(String s) {
-        this.logger.info("Admin's " + s + " was added successfully");
+        this.logger.info(s);
     }
 
-    public void sendingEmail() {
-        this.logger.info("Sending email...");
+    public void sendingEmail(String s) {
+        this.logger.info(s);
     }
 
-    public void emailSent() {
-        this.logger.info("Email was sent successfully");
+    public void emailSent(String s) {
+        this.logger.info(s);
     }
 
     public void unableToSendEmail(String s) {
-        this.logger.error("Error sending email. " + s);
+        this.logger.error(s);
     }
 
     public void policyRetrievedSuccessfully(String s) {
-        this.logger.info("Policies were retrieved successfully through " + s);
+        this.logger.info(s);
     }
 
     public void unableToFindPolicy(String s) {
-        this.logger.error("No policies were found through " + s);
+        this.logger.error(s);
     }
 
-    public void policyExists() {
-        this.logger.error("Policy already exists");
+    public void policyExists(String s) {
+        this.logger.error(s);
     }
 
-    public void policyAddedSuccessfully() {
-        this.logger.info("Policy successfully added");
+    public void policyAddedSuccessfully(String s) {
+        this.logger.info(s);
     }
 
     public void policyDeletedSuccessfully(String s) {
-        this.logger.info("Policy successfully deleted by " + s);
+        this.logger.info(s);
+    }
+
+    public void summaryDoesntExist(String s) {
+        this.logger.error(s);
+    }
+
+    public void summaryRetrievedSuccessfully(String s) {
+        this.logger.info(s);
+    }
+
+    public void summaryDoesExist(String s) {
+        this.logger.error(s);
+    }
+
+    public void summaryAddedSuccessfully(String s) {
+        this.logger.info(s);
     }
 }

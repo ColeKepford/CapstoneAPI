@@ -2,23 +2,25 @@ package com.HailMaryAPI.HailMary.Summary;
 
 import javax.persistence.*;
 
+import com.HailMaryAPI.HailMary.Clients.Client;
+
 @Entity
 @Table(name="ngf_summaries")
 public class Summary {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer summary_id;
-    @JoinColumn(name = "client_id", referencedColumnName = "client_id")
+    @JoinColumn(name = "client")
     @ManyToOne(optional = false, fetch = FetchType.EAGER)
-    private Integer client_id;
+    private Client client;
     private String path;
 
     public Summary() {
     }
 
-    public Summary(Integer summary_id, Integer client_id, String path) {
+    public Summary(Integer summary_id, Client client, String path) {
         this.summary_id = summary_id;
-        this.client_id = client_id;
+        this.client = client;
         this.path = path;
     }
 
@@ -30,12 +32,12 @@ public class Summary {
         this.summary_id = summary_id;
     }
 
-    public Integer getClient_id() {
-        return client_id;
+    public Client getClient() {
+        return client;
     }
 
-    public void setClient_id(Integer client_id) {
-        this.client_id = client_id;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
     public String getPath() {

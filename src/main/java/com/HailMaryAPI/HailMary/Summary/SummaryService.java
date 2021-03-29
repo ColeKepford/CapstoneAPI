@@ -36,6 +36,6 @@ public class SummaryService {
             logs.summaryDoesExist("Summary " + summary.getSummary_id() + " already exsists");
         }
         summaryRepository.save(summary);
-        logs.summaryAddedSuccessfully("Successfully created new summary with id: " + summary.getSummary_id());
+        logs.summaryAddedSuccessfully("Successfully created new summary");
     }
 }

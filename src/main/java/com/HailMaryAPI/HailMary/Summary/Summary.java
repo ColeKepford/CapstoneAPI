@@ -8,10 +8,9 @@ import com.HailMaryAPI.HailMary.Clients.Client;
 @Table(name="ngf_summaries")
 public class Summary {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer summary_id;
     @JoinColumn(name = "client", referencedColumnName = "client_id")
-    @ManyToOne(optional = false, fetch = FetchType.EAGER)
+    @OneToOne(optional = false, fetch = FetchType.EAGER)
     private Client client;
     private String path;
 
@@ -20,11 +19,6 @@ public class Summary {
 
     public Summary(Integer summary_id, Client client, String path) {
         this.summary_id = summary_id;
-        this.client = client;
-        this.path = path;
-    }
-
-    public Summary(Client client, String path) {
         this.client = client;
         this.path = path;
     }

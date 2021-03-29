@@ -9,6 +9,7 @@
 2021-03-17 21:40:34,264 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2021-03-17 21:40:36,691 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.737 seconds (JVM running for 3.003)
 2021-03-17 21:40:42,799 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Admin was retreived successfully
+<<<<<<< HEAD
 2021-03-24 20:31:14,017 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on DESKTOP-ICQJ65O with PID 14668 (C:\Users\cocog\Documents\SAIT\4th SEM\Capstone\HailMaryAPI\target\classes started by cocog in C:\Users\cocog\Documents\SAIT\4th SEM\Capstone\HailMaryAPI)
 2021-03-24 20:31:14,019 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2021-03-24 20:31:17,906 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 4.223 seconds (JVM running for 4.503)
@@ -135,3 +136,27 @@
 2021-03-24 22:18:52,348 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Admin's credentials doesn't exist
 2021-03-24 22:18:52,349 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client's credentials was retrieved successfully
 2021-03-24 22:18:53,652 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies were retrieved successfully through email
+=======
+2021-03-26 18:23:09,290 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 19324 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:23:09,292 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:23:44,558 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 5212 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:23:44,561 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:31:40,853 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 25552 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:31:40,856 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:31:55,917 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 25228 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:31:55,920 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:35:18,659 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 14820 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:35:18,664 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:38:42,607 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 26600 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:38:42,609 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:38:44,942 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.643 seconds (JVM running for 2.904)
+2021-03-26 18:41:11,290 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 25724 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:41:11,293 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:43:04,375 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 29060 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:43:04,378 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:43:46,117 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 21512 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:43:46,120 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:44:56,393 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 20176 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:44:56,396 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:44:58,670 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.574 seconds (JVM running for 2.819)
+>>>>>>> 19595fbf27123a9981c2b0e42b0f7a8e87217196

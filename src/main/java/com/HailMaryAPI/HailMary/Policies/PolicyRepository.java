@@ -27,13 +27,6 @@ public interface PolicyRepository extends JpaRepository<Policy, Integer> {
 
     @Transactional
     @Modifying
-    @Query("UPDATE Policy SET client = ?1, policy_number= ?2, first_name = ?3, last_name = ?4, provider = ?5, type = ?6, coverage_amount = ?7, start_date = ?8, end_date = ?9 WHERE policy_id = ?10")
-    void updatePolicy(Client client, String policy_number, String first_name, String last_name,
-                                    String provider, String type, double coverage_amount, LocalDate start_date, LocalDate end_date,
-                                    int id);
-
-                                    @Transactional
-    @Modifying
     @Query("DELETE FROM Policy WHERE policy_id=?1")
     void deletePolicy(int id);
 }

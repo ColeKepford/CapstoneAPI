@@ -81,11 +81,10 @@ public class PolicyService {
     public void updatePolicy(Policy policy) {
       Optional<Policy> policyOptional = policyRepository.findById(policy.getPolicy_id());
         if(policyOptional.isPresent()) {
-            policyRepository.updatePolicy(policy.getClient(), policy.getPolicyNumber(), policy.getFirst_name(), policy.getLast_name(), policy.getProvider(), policy.getType(), policy.getCoverage_amount(), policy.getStart_date(), policy.getEnd_date(), policy.getPolicy_id());
-
+            policyRepository.save(policy);
             logs.updateSuccessful("Policy: " + policy.getPolicy_id() + " was successfully updated");
         }else {
-          logs.unableToUpdatePolicy("Unable to update" + policy.getPolicy_id());
+          logs.unableToUpdatePolicy("Unable to update" + "Policy\n" + policy.toString());
         }
     }
 

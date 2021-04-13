@@ -12,7 +12,7 @@ public class SendEmailService {
 
     @Autowired
     private JavaMailSender sendMail;
-    private LoggingController logs;
+    private LoggingController logs = new LoggingController();
 
     public void sendEmail(Email email) {
         boolean sent;

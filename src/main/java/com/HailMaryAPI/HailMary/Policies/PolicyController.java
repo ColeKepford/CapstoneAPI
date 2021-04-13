@@ -42,5 +42,12 @@ public class PolicyController {
     public void addNewPolicy(@RequestBody Policy policy) {
         policyService.addNewPolicy(policy);
     }
+    @PutMapping("/update")
+    public void updatePolicy(@RequestBody Policy policy) {
+      policyService.updatePolicy(policy);
+    }
+
+
+
     
 }

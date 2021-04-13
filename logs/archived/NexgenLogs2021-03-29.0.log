@@ -1,0 +1,210 @@
+<<<<<<< HEAD
+2021-03-17 21:34:39,134 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 20044 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-17 21:34:39,138 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-17 21:34:41,598 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.767 seconds (JVM running for 3.014)
+2021-03-17 21:35:46,039 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Failed to update client
+2021-03-17 21:36:34,403 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Updated successfully
+2021-03-17 21:37:38,737 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Client was retrieved successfully
+2021-03-17 21:39:20,023 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Admin already exists
+2021-03-17 21:40:34,262 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 14620 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-17 21:40:34,264 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-17 21:40:36,691 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.737 seconds (JVM running for 3.003)
+2021-03-17 21:40:42,799 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Admin was retreived successfully
+<<<<<<< HEAD
+2021-03-24 20:31:14,017 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on DESKTOP-ICQJ65O with PID 14668 (C:\Users\cocog\Documents\SAIT\4th SEM\Capstone\HailMaryAPI\target\classes started by cocog in C:\Users\cocog\Documents\SAIT\4th SEM\Capstone\HailMaryAPI)
+2021-03-24 20:31:14,019 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-24 20:31:17,906 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 4.223 seconds (JVM running for 4.503)
+2021-03-24 20:31:48,678 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Admin's credentials doesn't exist
+2021-03-24 20:31:48,683 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Client's credentials was retrieved successfully
+2021-03-24 20:31:49,984 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies were retrieved successfully through email
+2021-03-24 20:34:41,661 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies were retrieved successfully through email
+2021-03-24 20:34:49,416 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies were retrieved successfully through email
+2021-03-24 20:38:00,544 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Policies were retrieved successfully through email
+2021-03-24 20:38:00,562 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies were retrieved successfully through email
+2021-03-24 20:38:00,576 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies were retrieved successfully through email
+2021-03-24 20:38:00,592 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies were retrieved successfully through email
+2021-03-24 20:38:00,607 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies were retrieved successfully through email
+2021-03-24 20:38:00,621 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Policies were retrieved successfully through email
+2021-03-24 20:38:00,636 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies were retrieved successfully through email
+2021-03-24 20:38:00,653 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies were retrieved successfully through email
+2021-03-24 20:38:00,675 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies were retrieved successfully through email
+2021-03-24 20:38:00,709 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 20:38:00,738 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Policies were retrieved successfully through email
+2021-03-24 20:38:00,751 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies were retrieved successfully through email
+2021-03-24 20:38:00,764 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies were retrieved successfully through email
+2021-03-24 20:38:00,777 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies were retrieved successfully through email
+2021-03-24 20:38:00,789 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies were retrieved successfully through email
+2021-03-24 20:38:00,811 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Policies were retrieved successfully through email
+2021-03-24 20:38:00,822 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies were retrieved successfully through email
+2021-03-24 20:38:00,833 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies were retrieved successfully through email
+2021-03-24 20:38:00,857 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies were retrieved successfully through email
+2021-03-24 20:38:00,871 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 20:38:00,897 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Policies were retrieved successfully through email
+2021-03-24 20:38:00,909 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies were retrieved successfully through email
+2021-03-24 20:38:00,920 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies were retrieved successfully through email
+2021-03-24 20:38:00,930 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies were retrieved successfully through email
+2021-03-24 20:38:00,942 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies were retrieved successfully through email
+2021-03-24 20:38:00,956 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Policies were retrieved successfully through email
+2021-03-24 20:38:00,967 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies were retrieved successfully through email
+2021-03-24 20:38:00,978 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies were retrieved successfully through email
+2021-03-24 20:38:00,990 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies were retrieved successfully through email
+2021-03-24 20:38:00,999 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 20:38:01,009 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Policies were retrieved successfully through email
+2021-03-24 20:38:01,033 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies were retrieved successfully through email
+2021-03-24 20:38:01,045 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies were retrieved successfully through email
+2021-03-24 20:38:01,056 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies were retrieved successfully through email
+2021-03-24 20:38:01,074 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies were retrieved successfully through email
+2021-03-24 20:38:01,084 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Policies were retrieved successfully through email
+2021-03-24 20:38:01,097 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies were retrieved successfully through email
+2021-03-24 20:38:01,115 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies were retrieved successfully through email
+2021-03-24 20:38:01,129 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies were retrieved successfully through email
+2021-03-24 20:38:01,139 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 20:38:01,149 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Policies were retrieved successfully through email
+2021-03-24 20:38:01,159 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies were retrieved successfully through email
+2021-03-24 20:38:01,168 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies were retrieved successfully through email
+2021-03-24 20:38:01,194 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies were retrieved successfully through email
+2021-03-24 20:38:01,206 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies were retrieved successfully through email
+2021-03-24 20:38:01,217 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Policies were retrieved successfully through email
+2021-03-24 20:38:01,227 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies were retrieved successfully through email
+2021-03-24 20:38:01,237 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies were retrieved successfully through email
+2021-03-24 20:38:01,248 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies were retrieved successfully through email
+2021-03-24 20:38:01,257 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 20:38:01,267 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 20:38:01,279 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies were retrieved successfully through email
+2021-03-24 20:42:07,071 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Admin's credentials doesn't exist
+2021-03-24 20:42:07,072 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client's credentials was retrieved successfully
+2021-03-24 20:42:08,045 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies were retrieved successfully through email
+2021-03-24 20:44:51,641 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Policies were retrieved successfully through email
+2021-03-24 20:45:07,638 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 20:47:11,636 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies were retrieved successfully through email
+2021-03-24 20:49:40,276 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies were retrieved successfully through email
+2021-03-24 20:51:07,217 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies were retrieved successfully through email
+2021-03-24 20:53:19,384 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies were retrieved successfully through email
+2021-03-24 20:53:23,762 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Policies were retrieved successfully through email
+2021-03-24 20:53:39,842 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 20:53:43,218 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies were retrieved successfully through email
+2021-03-24 20:54:09,456 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies were retrieved successfully through email
+2021-03-24 20:54:18,468 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies were retrieved successfully through email
+2021-03-24 20:55:07,503 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies were retrieved successfully through email
+2021-03-24 20:55:21,799 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Policies were retrieved successfully through email
+2021-03-24 20:55:38,329 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies were retrieved successfully through email
+2021-03-24 20:55:45,241 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Admin's credentials doesn't exist
+2021-03-24 20:55:45,243 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Client's credentials was retrieved successfully
+2021-03-24 20:55:46,481 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Policies were retrieved successfully through email
+2021-03-24 20:56:14,520 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 20:56:48,736 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies were retrieved successfully through email
+2021-03-24 20:56:54,376 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies were retrieved successfully through email
+2021-03-24 20:57:00,490 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Admin's credentials doesn't exist
+2021-03-24 20:57:00,491 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client's credentials was retrieved successfully
+2021-03-24 20:57:15,606 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Admin's credentials doesn't exist
+2021-03-24 20:57:15,608 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Client's credentials was retrieved successfully
+2021-03-24 20:57:16,858 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies were retrieved successfully through email
+2021-03-24 21:00:15,643 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Policies were retrieved successfully through email
+2021-03-24 21:00:31,642 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Policies were retrieved successfully through email
+2021-03-24 21:00:50,948 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Policies were retrieved successfully through email
+2021-03-24 21:01:23,088 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies were retrieved successfully through email
+2021-03-24 21:04:00,833 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Admin's credentials doesn't exist
+2021-03-24 21:04:00,834 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Client's credentials was retrieved successfully
+2021-03-24 21:04:52,230 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Admin's credentials doesn't exist
+2021-03-24 21:04:52,232 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Client's credentials was retrieved successfully
+2021-03-24 21:04:53,459 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 21:08:09,010 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Updated client successfully
+2021-03-24 21:08:11,016 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Updated client successfully
+2021-03-24 21:08:11,348 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Updated client successfully
+2021-03-24 21:08:11,526 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Updated client successfully
+2021-03-24 21:08:11,704 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Updated client successfully
+2021-03-24 21:08:11,857 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Updated client successfully
+2021-03-24 21:08:12,015 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Updated client successfully
+2021-03-24 21:08:12,163 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Updated client successfully
+2021-03-24 21:08:54,246 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Admin's credentials doesn't exist
+2021-03-24 21:08:54,248 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Client's credentials was retrieved successfully
+2021-03-24 21:10:39,081 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Admin's credentials doesn't exist
+2021-03-24 21:10:39,082 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Client's credentials was retrieved successfully
+2021-03-24 21:12:52,735 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Admin's credentials doesn't exist
+2021-03-24 21:12:52,736 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Client's credentials was retrieved successfully
+2021-03-24 21:14:30,339 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Admin's credentials doesn't exist
+2021-03-24 21:14:30,341 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client's credentials was retrieved successfully
+2021-03-24 21:14:31,571 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies were retrieved successfully through email
+2021-03-24 21:21:56,594 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Policies were retrieved successfully through email
+2021-03-24 21:30:41,291 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 21:30:46,882 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Admin's credentials doesn't exist
+2021-03-24 21:30:46,884 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Client's credentials was retrieved successfully
+2021-03-24 21:30:48,076 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Policies were retrieved successfully through email
+2021-03-24 21:42:48,008 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Policies were retrieved successfully through email
+2021-03-24 22:17:01,934 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Admin's credentials doesn't exist
+2021-03-24 22:17:01,935 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Client's credentials was retrieved successfully
+2021-03-24 22:17:03,124 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies were retrieved successfully through email
+2021-03-24 22:18:52,348 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Admin's credentials doesn't exist
+2021-03-24 22:18:52,349 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client's credentials was retrieved successfully
+2021-03-24 22:18:53,652 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Policies were retrieved successfully through email
+=======
+2021-03-26 18:23:09,290 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 19324 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:23:09,292 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:23:44,558 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 5212 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:23:44,561 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:31:40,853 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 25552 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:31:40,856 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:31:55,917 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 25228 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:31:55,920 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:35:18,659 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 14820 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:35:18,664 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:38:42,607 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 26600 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:38:42,609 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:38:44,942 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.643 seconds (JVM running for 2.904)
+2021-03-26 18:41:11,290 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 25724 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:41:11,293 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:43:04,375 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 29060 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:43:04,378 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:43:46,117 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 21512 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:43:46,120 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:44:56,393 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 20176 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-26 18:44:56,396 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-26 18:44:58,670 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.574 seconds (JVM running for 2.819)
+>>>>>>> 19595fbf27123a9981c2b0e42b0f7a8e87217196
+=======
+2021-03-29 10:23:08,993 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 6664 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 10:23:08,996 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:10:51,442 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 20172 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:10:51,445 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:10:53,890 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.755 seconds (JVM running for 3.009)
+2021-03-29 14:13:11,104 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 20388 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:13:11,106 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:13:13,564 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.762 seconds (JVM running for 3.018)
+2021-03-29 14:13:52,917 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 16604 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:13:52,920 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:13:55,362 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.761 seconds (JVM running for 3.035)
+2021-03-29 14:16:56,314 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 5736 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:16:56,317 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:16:58,848 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.838 seconds (JVM running for 3.095)
+2021-03-29 14:21:12,149 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 26224 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:21:12,152 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:21:14,601 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.755 seconds (JVM running for 3.011)
+2021-03-29 14:22:03,125 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 4876 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:22:03,129 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:22:05,586 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.781 seconds (JVM running for 3.054)
+2021-03-29 14:23:55,624 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 8624 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:23:55,626 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:23:58,104 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.792 seconds (JVM running for 3.055)
+2021-03-29 14:24:46,232 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 8324 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:24:46,235 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:24:48,704 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.772 seconds (JVM running for 3.038)
+2021-03-29 14:28:55,541 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 12376 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:28:55,544 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:28:58,022 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.784 seconds (JVM running for 3.044)
+2021-03-29 14:29:22,651 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 1808 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:29:22,654 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:29:25,080 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.731 seconds (JVM running for 2.98)
+2021-03-29 14:29:28,883 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Successfully created new summary
+2021-03-29 14:31:49,541 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Successfully created new summary
+2021-03-29 14:43:30,369 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 14116 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:43:30,371 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:43:32,858 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.812 seconds (JVM running for 3.068)
+2021-03-29 14:43:56,176 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 15516 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:43:56,180 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:43:58,704 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.862 seconds (JVM running for 3.111)
+2021-03-29 14:50:40,180 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 24800 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:50:40,183 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:51:09,300 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on AndresGamingRIG with PID 16160 (H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI\target\classes started by Andre in H:\School\Semester 4\PROJ\HailMaryFiles\HailMaryAPI\HailMaryAPI)
+2021-03-29 14:51:09,303 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 14:51:11,859 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 2.866 seconds (JVM running for 3.117)
+>>>>>>> 3285672fe5e33ee1f060026aa21a80dc76fa5c76

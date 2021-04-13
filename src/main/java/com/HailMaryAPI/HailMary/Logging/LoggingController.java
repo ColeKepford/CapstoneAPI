@@ -76,6 +76,10 @@ public class LoggingController {
         this.logger.error(s);
     }
 
+    public void unableToUpdatePolicy(String s) {
+      this.logger.info(s);
+    }
+
     public void policyExists(String s) {
         this.logger.error(s);
     }

@@ -38,7 +38,7 @@ public class PolicyController {
     public void deletePolicy(@PathVariable("id") int id) {
         policyService.deletePolicyById(id);
     } 
-    @PostMapping
+    @PutMapping(value = "/add")
     public void addNewPolicy(@RequestBody Policy policy) {
         policyService.addNewPolicy(policy);
     }

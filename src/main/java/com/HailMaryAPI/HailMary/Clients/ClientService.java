@@ -24,6 +24,17 @@ public class ClientService {
         return clientRepository.findAll();
     }
 
+    public List<Client> getClientsByLastName(String lastName) {
+      Optional<List<Client>> clientsOptional = clientRepository.findClientsByLastName(lastName);
+      if(clientsOptional.isPresent()) {
+        logs.clientRetrievedSuccessfully("Clients with lastname containing: " + lastName + " were retrieved");
+            return clientsOptional.get();
+      } else {
+        logs.clientDoesntExist("Clients with last name containing: " + lastName + " do not exist");
+        return null;
+      }
+    }
+
     public Client getClientById(int id) {
         boolean exists = clientRepository.existsById(id);
         if(!exists) {

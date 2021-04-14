@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 import javax.transaction.Transactional;
@@ -17,6 +18,9 @@ public interface ClientRepository extends JpaRepository<Client, Integer> {
 
     @Query("Select c FROM Client c WHERE c.email = ?1 AND c.password = ?2")
     Optional<Client> findClient(String email, String password);
+
+    @Query("Select c FROM Client c WHERE c.last_name LIKE ?1")
+    Optional<List<Client>> findClientsByLastName(String lastName);
 
     @Transactional
     @Modifying

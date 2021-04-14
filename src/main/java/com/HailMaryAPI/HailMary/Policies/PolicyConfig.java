@@ -37,7 +37,12 @@ public class PolicyConfig {
               
              repository.saveAll(List.of(one, two));
              one.setFirst_name("karp");
-             ps.updatePolicy(one);*/
+             ps.updatePolicy(one);
+
+             List<Client> kepfords = cs.getClientsByLastName("kepford");
+             for(int i = 0; i < kepfords.size(); i++) {
+               System.out.println(kepfords.get(i));
+             }*/
         };
     }
     

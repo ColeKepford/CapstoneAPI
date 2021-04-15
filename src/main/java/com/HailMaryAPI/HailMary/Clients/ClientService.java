@@ -3,6 +3,7 @@ package com.HailMaryAPI.HailMary.Clients;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -47,11 +48,13 @@ public class ClientService {
         }
     }
 
-    public Client getClientByEmail(String email) {
+    public List<Client> getClientByEmail(String email) {
         Optional<Client> clientOptional = clientRepository.findClientByEmail(email);
         if(clientOptional.isPresent()) {
             logs.clientRetrievedSuccessfully("Client with email: " + email + " was retrieved");
-            return clientOptional.get();
+            List<Client> client = new ArrayList<>();
+            client.add(clientOptional.get());
+            return client;
         } else {
             logs.clientDoesntExist("Client with email: " + email + " does not exsist");
             return null;

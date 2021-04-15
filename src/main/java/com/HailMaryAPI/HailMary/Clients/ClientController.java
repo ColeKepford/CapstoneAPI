@@ -32,8 +32,13 @@ public class ClientController {
     }
 
     @GetMapping("/clientemail/{email}")
-    public Client getClientByEmail(@PathVariable String email) {
+    public List<Client> getClientByEmail(@PathVariable String email) {
         return clientService.getClientByEmail(email);
+    }
+
+    @GetMapping("/clientsbylastname/{lastName}")
+    public List<Client> getClientsByLastName(@PathVariable String lastName) {
+      return clientService.getClientsByLastName(lastName);
     }
 
     @PostMapping(path="/registerClient", consumes = "application/json", produces = "application/json")

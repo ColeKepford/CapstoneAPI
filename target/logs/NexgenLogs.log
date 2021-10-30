@@ -1,0 +1,3 @@
+2021-04-16 09:39:22,034 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication v0.0.1-SNAPSHOT using Java 15.0.1 on DESKTOP-ICQJ65O with PID 25292 (C:\Users\cocog\Documents\SAIT\4th SEM\Capstone\HailMaryAPI\target\HailMary-0.0.1-SNAPSHOT.jar started by cocog in C:\Users\cocog\Documents\SAIT\4th SEM\Capstone\HailMaryAPI\target)
+2021-04-16 09:39:22,038 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-16 09:39:25,383 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 3.83 seconds (JVM running for 4.363)

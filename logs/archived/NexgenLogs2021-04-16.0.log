@@ -1,0 +1,15 @@
+2021-04-16 02:23:07,258 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on DESKTOP-ICQJ65O with PID 26280 (C:\Users\cocog\Documents\SAIT\4th SEM\Capstone\HailMaryAPI\target\classes started by cocog in C:\Users\cocog\Documents\SAIT\4th SEM\Capstone\HailMaryAPI)
+2021-04-16 02:23:07,262 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-16 02:23:10,173 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 3.256 seconds (JVM running for 3.538)
+2021-04-16 02:23:15,373 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Clients with lastname containing: kep were retrieved
+2021-04-16 02:24:24,989 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Client with email: cole.kepford@gmail.com was retrieved
+2021-04-16 02:24:32,284 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies for cole.kepford@gmail.com were retrieved successfully
+2021-04-16 02:24:36,443 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Clients with lastname containing: k were retrieved
+2021-04-16 02:24:45,355 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Client with email: cole.kepford@gmail.com was retrieved
+2021-04-16 02:24:48,252 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Clients with lastname containing: s were retrieved
+2021-04-16 02:24:50,738 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Clients with lastname containing: s were retrieved
+2021-04-16 02:25:08,359 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Clients with lastname containing: s were retrieved
+2021-04-16 02:25:25,847 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Policies for cole.kepford@gmail.com were retrieved successfully
+2021-04-16 02:44:11,523 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplicationTests using Java 15.0.1 on DESKTOP-ICQJ65O with PID 11840 (started by cocog in C:\Users\cocog\Documents\SAIT\4th SEM\Capstone\HailMaryAPI)
+2021-04-16 02:44:11,526 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-16 02:44:14,352 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplicationTests in 3.055 seconds (JVM running for 3.651)

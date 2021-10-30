@@ -1,0 +1,24 @@
+2021-04-22 13:09:12,555 INFO org.springframework.boot.StartupInfoLogger [main] Starting HailMaryApplication using Java 15.0.1 on DESKTOP-ICQJ65O with PID 27600 (C:\Users\cocog\Documents\SAIT\4th SEM\Capstone\HailMaryAPI\target\classes started by cocog in C:\Users\cocog\Documents\SAIT\4th SEM\Capstone\HailMaryAPI)
+2021-04-22 13:09:12,560 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-22 13:09:15,322 INFO org.springframework.boot.StartupInfoLogger [main] Started HailMaryApplication in 3.085 seconds (JVM running for 3.343)
+2021-04-22 13:09:43,977 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Retrieved all clients
+2021-04-22 13:09:56,001 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Client with email: cole.kepford@gmail.com was retrieved
+2021-04-22 13:10:05,469 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Policies for cole.kepford@gmail.com were retrieved successfully
+2021-04-22 13:10:18,458 ERROR com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Admin: cole.kepford@gmail.com does not exsist
+2021-04-22 13:10:18,461 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Client with email: cole.kepford@gmail.com was retrieved
+2021-04-22 13:10:18,499 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary 1 was retrieved
+2021-04-22 13:10:20,563 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary 1 was retrieved
+2021-04-22 13:10:20,575 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary 1 was retrieved
+2021-04-22 13:10:20,590 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary 1 was retrieved
+2021-04-22 13:10:20,604 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary 1 was retrieved
+2021-04-22 13:10:20,618 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Summary 1 was retrieved
+2021-04-22 13:10:20,630 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-5] Summary 1 was retrieved
+2021-04-22 13:10:20,706 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-6] Summary 1 was retrieved
+2021-04-22 13:10:20,719 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-8] Summary 1 was retrieved
+2021-04-22 13:10:20,740 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-9] Summary 1 was retrieved
+2021-04-22 13:10:20,758 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-10] Summary 1 was retrieved
+2021-04-22 13:10:20,789 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-7] Summary 1 was retrieved
+2021-04-22 13:10:20,802 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-2] Summary 1 was retrieved
+2021-04-22 13:10:20,813 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-1] Summary 1 was retrieved
+2021-04-22 13:10:20,823 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-3] Summary 1 was retrieved
+2021-04-22 13:10:22,173 INFO com.HailMaryAPI.HailMary.Logging.LoggingController [http-nio-8080-exec-4] Policies for cole.kepford@gmail.com were retrieved successfully
